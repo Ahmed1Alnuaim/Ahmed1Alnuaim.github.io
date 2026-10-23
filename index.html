@@ -225,8 +225,8 @@
   </header>
 
   <main id="main">
-    <p class="lede">I like being close to the work: deciding what to build, challenging ideas, and getting into how a product actually works.</p>
-    <p class="about">I work on payment products at Vrtx, a fintech in Riyadh. Before that I was in governance and operational technology at Aramco, and led student and developer communities. Outside work I build products of my own.</p>
+    <p class="lede">Product manager in fintech, working across mobile, web and developer-facing products.</p>
+    <p class="about">At Vrtx I define product requirements, prototype solutions and validate features before launch, with a focus on our mobile SDK and the developers who integrate it. Outside work I explore and build product ideas of my own, out of a long-standing interest in technology and innovation.</p>
 
     <nav aria-label="Sections">
       <ul class="jump">
@@ -332,6 +332,7 @@
         <div class="row">
           <span class="when">Product and Agile</span>
           <ul class="group">
+            <li><a href="https://www.scrum.org/certificates/1358658" target="_blank" rel="noopener noreferrer">Professional Scrum Product Owner I</a> <span class="at">Scrum.org, 2026</span></li>
             <li><a href="https://www.scrum.org/certificates/1340064" target="_blank" rel="noopener noreferrer">Professional Scrum Master I</a> <span class="at">Scrum.org, 2026</span></li>
             <li><a href="https://www.udacity.com/certificate/e/f3bc309a-5ca9-11f0-b9b8-eba3eb4fd760" target="_blank" rel="noopener noreferrer">Product Manager</a> <span class="at">Udacity, 2025</span></li>
             <li><a href="https://www.credly.com/badges/8092880a-9635-4cbc-8296-af916efd0123/linked_in_profile" target="_blank" rel="noopener noreferrer">Product Analytics Certified</a> <span class="at">Pendo, 2025</span></li>
@@ -373,7 +374,7 @@
           </ul>
         </div>
       </div>
-      <button class="toggle" type="button" aria-controls="creds" aria-expanded="false" data-more="Show all 23 certifications" data-less="Show fewer">Show all 23 certifications</button>
+      <button class="toggle" type="button" aria-controls="creds" aria-expanded="false" data-more="Show all 24 certifications" data-less="Show fewer">Show all 24 certifications</button>
     </section>
 
     <section id="skills" aria-labelledby="h-skills">
@@ -397,7 +398,7 @@
     </section>
   </main>
 
-  <footer>Ahmed Al-Nuaim, Riyadh. Updated <span id="updated">October 2026</span>.</footer>
+  <footer>© 2026 Ahmed Al-Nuaim</footer>
 </div>
 
 <nav class="bar" id="bar" aria-label="Quick contact">
@@ -437,13 +438,6 @@
       btn.textContent = open ? btn.dataset.less : btn.dataset.more;
     });
   });
-
-  // Footer date follows the last publish (GitHub Pages sends Last-Modified)
-  const modified = new Date(document.lastModified);
-  if (!isNaN(modified)) {
-    document.getElementById("updated").textContent =
-      modified.toLocaleDateString("en-GB", { month: "long", year: "numeric" });
-  }
 
   // Phone contact bar: shown once the header actions scroll away, hidden again at the Contact section
   const bar = document.getElementById("bar");
